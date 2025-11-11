@@ -110,6 +110,6 @@ if height_cm <='145':
 elif height_cm >= '175':
     print('You are too tall for this ride, please step down.')
 
-
+ 
 
 
