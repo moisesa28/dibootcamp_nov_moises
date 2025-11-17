@@ -101,10 +101,10 @@ class Zoo():
 
 #method to get all animals that are currently in the zoo. if the list is empty, it will show that there are no animals
     def get_animals(self):
-        if self.animals == []:
+        if not self.animals:
             print(f'The {self.zoo_name} Zoo has no animals.')
         else:
-            print(self.animals)
+            print(', '.join(self.animals))
 
 #method to sell an animal and remove it from the list
     def sell_animal(self, animal_sold):
@@ -139,6 +139,7 @@ print(f'Welcome to {brooklyn_safari.zoo_name} Zoo')
 print('')
 brooklyn_safari.add_animal("Giraffe")
 brooklyn_safari.add_animal("Bear")
+brooklyn_safari.add_animal("Baboon")
 brooklyn_safari.add_animal("Baboon")
 brooklyn_safari.add_animal("Goat")
 brooklyn_safari.add_animal("Boa")
