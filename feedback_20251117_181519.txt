@@ -1,0 +1,19 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/a7538d07fdc18a2fcd0cc87cd317b01d5ccad7d8/week2/day2/day2_exersisesxp.py
+suggestions for improvement:
+- In the `PetDog.play` method, the logic to add the name might be slightly flawed as it stands. it appends a list to the all_dog_names instead of appending the names in the list directly.
+- Consider adding docstrings to your classes and methods to improve readability and maintainability.
+Correctness: 100%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/a7538d07fdc18a2fcd0cc87cd317b01d5ccad7d8/week2/day2/dogclass.py
+suggestions for improvement:
+- Consider adding type hints to improve readability and maintainability.
+- The `fight` method could be refactored slightly to avoid redundant calculations, although the performance impact is minimal.
+Correctness: 100%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/a7538d07fdc18a2fcd0cc87cd317b01d5ccad7d8/week2/day2/dogs_domesticated.py
+suggestions for improvement:
+- The play method can be improved, the all_dog_names list and the check for empty strings are not needed. Also, the f string is not working: print(f'{', '.join(dog_names)} play together!')
+- Make sure that the Dog class is imported from the correct file and that the import statement is correct.
+- Remove the parameter list in the init function. super().__init__(name, age, weight) already passes the attributes to the parent class
+Correctness: 70%
+-----
