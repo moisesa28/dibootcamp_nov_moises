@@ -16,28 +16,12 @@ class Circle:
         elif diameter is not None:
             self.diameter = diameter # This will call the setter
 
-    @property
-    def radius(self):
-        return self._radius
-
-    @radius.setter
-    def radius(self, value):
-        if not isinstance(value, (int, float)) or value < 0:
-            raise ValueError("Radius must be a non-negative number.")
-        self._radius = value
-
-    @property
-    def diameter(self):
-        return self._radius * 2
-
-    @diameter.setter
-    def diameter(self, value):
-        if not isinstance(value, (int, float)) or value < 0:
-            raise ValueError("Diameter must be a non-negative number.")
-        self._radius = value / 2
-
-    def __repr__(self):
+        def __repr__(self):
         return f"Circle(radius={self.radius})"
+
+        def __add__(self):
+            
+
 
 # Example Usage and Verification:
 print("--- Initializing Circles ---")
