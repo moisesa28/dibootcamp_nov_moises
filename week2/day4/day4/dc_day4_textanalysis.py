@@ -8,14 +8,12 @@ import string
 
 class Text():
     def __init__(self, input_str: str):
-        #A class for analyzing text data
         if not isinstance(input_str, str):
             raise TypeError("Text must be a string.")
         self.txt = input_str
         
 
     def word_frequency(self, word: str):
-        #Return how many times 'word' appears in the text. Case-insensitive
         if not word or not isinstance(word, str):
             raise ValueError("word must be a non-empty string.")
         
@@ -24,8 +22,7 @@ class Text():
         count = words.count(target)
         return count if count > 0 else None
 
-    def most_common_word(self):
-        #Return the most frequent word in the text
+    def most_common_word(self):        
         words = self.txt.lower().split()
         if not words:
             return None
@@ -57,9 +54,8 @@ class Text():
             raise IOError(f"Error reading file: {e}")
         
 
-class TextModification:
+class TextModification(Text):
 
-    @staticmethod
     def remove_punctuation(text: str):
         #Remove punctuation characters from text
         if not isinstance(text, str):
@@ -68,7 +64,6 @@ class TextModification:
         translator = str.maketrans('', '', string.punctuation)
         return text.translate(translator)
     
-    @staticmethod
     def clean_text(text: str):
         #Full pipeline: lowercase → remove punctuation → remove double spaces
         text = TextModification.to_lowercase(text)
@@ -93,7 +88,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 text_obj = Text.from_file(dir_path + '/dc_text.txt')
 
-print("Frequency of 'cotton':", text_obj.word_frequency("cotton"))
+print("Frequency of 'honey':", text_obj.word_frequency("honey"))
 print("Most common word:", text_obj.most_common_word())
 print("Unique words:", text_obj.unique_words())
 print(text_obj.most_common_word())
