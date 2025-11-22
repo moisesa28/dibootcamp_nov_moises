@@ -1,0 +1,18 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/ed5171a94fea100794b119313f0e1787ddfcfae1/week2/day3/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/ed5171a94fea100794b119313f0e1787ddfcfae1/week2/day3/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/ed5171a94fea100794b119313f0e1787ddfcfae1/week2/day3/w2d3_exercisesxp.py
+suggestions for improvement:
+- In Exercise 1, the `__add__` method should raise a TypeError when currencies are different, as the instructions specify, instead of returning the current object. The `__iadd__` method can also be changed to raise a TypeError instead of a ValueError.
+- In Exercise 1, it is better to avoid using return self on the `__add__` and define the TypeError exception as in the instructions.
+- In Exercise 1, the `__repr__` method should return a string that can be used to recreate the object. Currently, it creates a string that, if executed, would result in a NameError because `Currency` is not defined within the string. Consider returning a simple string representation instead, like 'Currency object'.
+- In Exercise 1, the output is not what's expected as shown in the instructions. Please fix it so it matches the instructions.
+Correctness: 85%
+-----
