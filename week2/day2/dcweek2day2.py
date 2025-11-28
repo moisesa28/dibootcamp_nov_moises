@@ -22,7 +22,8 @@ class Pagination():
     def go_to_page(self, page_num):
         if not (1 <= page_num <= self.total_pages):
             raise ValueError(f"Page number {page_num} is out of range. Must be between 1 and {self.total_pages}.")
-        self.current_idx = page_num - 1 #since it starts at 0, but user input would be 1
+        else:         
+            self.current_idx = page_num - 1 #since it starts at 0, but user input would be 1
         
         
 
@@ -46,6 +47,8 @@ class Pagination():
             self.current_idx -= 1
         return self
 
+    def __str__(self):
+        return '\''.join(str(item) for item in self.get_visible_items())
 alphabetList = list("abcdefghijklmnopqrstuvwxyz")
 p = Pagination(alphabetList, 4)
 
@@ -64,7 +67,7 @@ p.go_to_page(4)
 print(p.current_idx + 1)
 # Output: ValueError
 
-p.go_to_page(0)
+p.go_to_page(20)
 # print(p.get_visible_items())
 # Raises ValueError
     
