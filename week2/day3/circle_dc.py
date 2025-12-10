@@ -7,58 +7,90 @@
 import math
 
 class Circle:
-    def __init__(self, radius=None, diameter=None):
-        if (radius is not None and diameter is not None) or (radius is None and diameter is None):
-            raise ValueError("Provide either radius or diameter, but not both or neither.")
+    def __init__(self, radius: float):
+        if radius <= 0:
+            raise ValueError("Radius must be positive.")
+        self.radius = radius
 
-        if radius is not None:
-            self.radius = radius # This will call the setter
-        elif diameter is not None:
-            self.diameter = diameter # This will call the setter
+    # --------- Alternate constructor using a decorator ---------
+    @classmethod
+    def from_diameter(cls, diameter: float):
+        """Create a Circle using the diameter."""
+        if diameter <= 0:
+            raise ValueError("Diameter must be positive.")
+        return cls(diameter / 2)
 
-        def __repr__(self):
+    # --------- Properties ---------
+    @property
+    def diameter(self):
+        return self.radius * 2
+
+    @diameter.setter
+    def diameter(self, value):
+        if value <= 0:
+            raise ValueError("Diameter must be positive.")
+        self.radius = value / 2
+
+    # --------- Area ---------
+    @property
+    def area(self):
+        return math.pi * (self.radius ** 2)
+
+    # --------- Representation ---------
+    def __repr__(self):
         return f"Circle(radius={self.radius})"
 
-        def __add__(self):
-            
+    # --------- Addition ---------
+    def __add__(self, other):
+        if not isinstance(other, Circle):
+            return NotImplemented
+        return Circle(self.radius + other.radius)
+
+    # --------- Comparisons ---------
+    def __eq__(self, other):
+        if not isinstance(other, Circle):
+            return NotImplemented
+        return self.radius == other.radius
+
+    def __gt__(self, other):
+        if not isinstance(other, Circle):
+            return NotImplemented
+        return self.radius > other.radius
+
+    def __lt__(self, other):
+        if not isinstance(other, Circle):
+            return NotImplemented
+        return self.radius < other.radius
 
 
-# Example Usage and Verification:
-print("--- Initializing Circles ---")
-circle1 = Circle(radius=5)
-print(f"Circle 1: {circle1}, Radius: {circle1.radius}, Diameter: {circle1.diameter}")
+c1 = Circle(5)
 
-circle2 = Circle(diameter=10)
-print(f"Circle 2: {circle2}, Radius: {circle2.radius}, Diameter: {circle2.diameter}")
+c2 = Circle.from_diameter(20)
+print(c2.radius)   # 10
 
-# Test property setters
-print("\n--- Testing Setters ---")
-circle1.radius = 7
-print(f"Circle 1 (radius set to 7): {circle1}, Radius: {circle1.radius}, Diameter: {circle1.diameter}")
+print(c1.radius)
+print(c1.diameter)
 
-circle2.diameter = 14
-print(f"Circle 2 (diameter set to 14): {circle2}, Radius: {circle2.radius}, Diameter: {circle2.diameter}")
+c1.diameter = 50
+print(c1.radius)   # 25
 
-# Test ValueErrors
-print("\n--- Testing ValueErrors ---")
-try:
-    Circle(radius=5, diameter=10)
-except ValueError as e:
-    print(f"Error: {e}")
+print(c1.area)
+print(c1)  # Circle(radius=25)
 
-try:
-    Circle()
-except ValueError as e:
-    print(f"Error: {e}")
+c3 = c1 + c2
+print(c3)   # New circle with combined radius
+print(c1 == c2)  # False
+print(c1 > c2)   # True
+print(c1 < c2)   # False
 
-try:
-    circle1.radius = -2
-except ValueError as e:
-    print(f"Error: {e}")
+print(c1 > c2)
+print(c1 == c2)
+# Example usage:
+c1 = Circle(5)
+c2 = Circle.from_diameter(20)
+print(c2.radius)   # 10
 
-try:
-    circle2.diameter = -5
-except ValueError as e:
-    print(f"Error: {e}")
-
-
+circles = [Circle(10), Circle(3), Circle(7)]
+circles.sort()
+print(circles)
+# Output: [Circle(radius=3), Circle(radius=7), Circle(radius=10)]
