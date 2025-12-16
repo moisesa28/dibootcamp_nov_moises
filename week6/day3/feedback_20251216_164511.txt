@@ -1,0 +1,11 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/74eb151b70f09092fce267b46fafa7697d688fb1/week6/day3/daily challenge w6d3.sql
+suggestions for improvement:
+- The code is well-structured and addresses all parts of the problem.
+- Minor formatting improvements can be made for better readability.
+Correctness: 100%
+-----
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/74eb151b70f09092fce267b46fafa7697d688fb1/week6/day3/exercisesXP_w6d3.sql
+suggestions for improvement:
+- The provided code does not address the instructions of the Chapter Content/Questions. The code is related to DVD rentals and does not create tables related to customers, customer profiles, books, students or a library. It does not implement one-to-one or many-to-many relationships as specified in the instructions.
+Correctness: 0%
+-----
