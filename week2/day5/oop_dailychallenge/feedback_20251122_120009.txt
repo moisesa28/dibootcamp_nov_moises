@@ -1,0 +1,6 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/oop_dailychallenge/oop_dc.py
+suggestions for improvement:
+- Consider adding more comments to explain the logic within the `shuffle` and `deal` methods.
+- The code is well-structured, but consider adding type hints for better readability and maintainability.
+Correctness: 100%
+-----
