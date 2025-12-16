@@ -1,0 +1,12 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/629c1aa79c5fe986333dab2cc84087e2422c9a55/week6/day2/exercises_xp_w6d2.sql
+suggestions for improvement:
+- No specific feedback.
+Correctness: 100%
+-----
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/629c1aa79c5fe986333dab2cc84087e2422c9a55/week6/day2/exercises_xp_w6d2part2.sql
+suggestions for improvement:
+- In question 10 and 11, the filter rental_rate<2 isn't the correct approach to find cheapest movie and fetch first 10 rows. Modify that line with ORDER BY rental_rate ASC LIMIT 10 and ORDER BY rental_rate ASC OFFSET 10 LIMIT 10 respectively.
+- In question 12, FULL JOIN is not correct in this scenario. Replace it with INNER JOIN to display the common data from both table, which is more appropriate for the request.
+- In question 15, the join condition customer.customer_id = payment.staff_id is not correct. It should be payment.customer_id. Consider to add the staff table to get more info related to the staff who sold the dvd.
+Correctness: 86%
+-----

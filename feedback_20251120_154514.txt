@@ -1,0 +1,15 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/889a87cb004094705a3a96c4173c65b625f2aaca/week2/day5/miniproject_rockpaperscissors/game.py
+suggestions for improvement:
+- The `get_game_result` method does not take `user_item` and `computer_item` as parameters, as described in the instructions. It uses the class attributes instead which is less flexible. Modify it to take parameters for better reusability.
+- The `play` method calls `get_game_result` without parameters, assuming it uses class attributes.  It would be better to pass `user_item` and `computer_item` explicitly.
+- Consider returning 'win', 'draw', or 'loss' strings from `get_game_result` as the instructions state, instead of more descriptive strings like "You win!".  This will make it easier to track scores in `rock-paper-scissors.py`
+Correctness: 90%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/889a87cb004094705a3a96c4173c65b625f2aaca/week2/day5/miniproject_rockpaperscissors/rock-paper-scissors.py
+suggestions for improvement:
+- The `game_results` dictionary is initialized and updated correctly within the `main` function.
+- There are two blocks of code that increments score - you should pick one approach and stick to it, either the if/else incrementer, or the result updater. This is especially pertinent to the situation when you import the external module `Game`.
+- The `print_results` function correctly retrieves the scores from the dictionary and prints them. However, you should also update the results dictionary at this function call, not just print the results.
+- The code uses `input()` to receive user input, which is generally fine, but consider validating the input more robustly to prevent potential errors if the `Game` module returns unexpected values.
+Correctness: 70%
+-----
