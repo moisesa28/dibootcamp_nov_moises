@@ -1,0 +1,45 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/betspractice.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/miniproject_anagram/anagram_checker.py
+suggestions for improvement:
+- The code does not address the exercises outlined in the chapter content. It implements an AnagramChecker class, which is irrelevant to OOP concepts, data structures (specifically lists as required), and random number generation as asked in the exercise.
+Correctness: 0%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/miniproject_anagram/anagrams.py
+suggestions for improvement:
+- The provided code is completely unrelated to the chapter's content, which focuses on OOP (Classes, Methods), Data Structures (Lists), and Random Number Generation. The code instead appears to be using an external `AnagramChecker` class to find anagrams of user-inputted words.
+Correctness: 0%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/miniproject_anagram/sowpods.txt
+suggestions for improvement:
+- This submission is just a list of words, it does not respond to the prompt in any meaningful way.
+- This submission is a plain text file consisting of a long list of words starting with 'FR'. It is not code and does not address any of the programming exercises described in the prompt involving OOP, data structures, or random number generation.  Therefore, it is completely irrelevant to the chapter content.
+- Given that the instructions request the creation of a Deck of Cards class with shuffle and deal methods, a file containing an unrelated list of words cannot receive any points.
+- The provided text is a large list of words, seemingly extracted from a dictionary or word list. This has absolutely nothing to do with the stated requirements of the exercise, which is to implement a `Deck` of cards class in Python, applying OOP principles, data structures (lists), and random number generation.
+- This part contains no code, and the list of words it presents is entirely irrelevant to the task at hand.
+Correctness: 0.0%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/miniproject_rockpaperscissors/game.py
+suggestions for improvement:
+- The code implements a Rock Paper Scissors game, which is not related to the Deck of Cards exercise or the OOP, Data Structures (Lists), and Random Number Generation concepts outlined in the chapter content.
+- Consider adding type hints to improve readability.
+- The `__init__` method calls other methods, which is generally discouraged as it can lead to unexpected behavior during object initialization. It is better to initialize attributes directly in the constructor and call other methods only when needed explicitly.
+- The `get_user_item` method modifies `self.user_item` twice, which is redundant.
+Correctness: 0%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/miniproject_rockpaperscissors/rock-paper-scissors.py
+suggestions for improvement:
+- The code does not implement the Deck and Card classes as described in Exercise 2.
+- The provided code implements a game menu and score tracking, which is irrelevant to the chapter's focus on OOP and data structures.
+- The code uses a `Game` class without defining it, making it impossible to assess its correctness within the context of the chapter content.
+Correctness: 0%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/939a04ea3565e7f7c4cd847a25229ff7cc719b77/week2/day5/oop_dailychallenge/oop_dc.py
+suggestions for improvement:
+- Consider adding docstrings to your classes and methods to improve readability.
+- The code is well-structured and could benefit from more comments explaining the logic within the methods.
+Correctness: 100%
+-----
