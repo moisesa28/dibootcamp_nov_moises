@@ -1,0 +1,5 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/9031288b997ba58f041e0d1dc40d39810a7c7ad0/week7/day2/daily_challenge/DC_Dino File_Moises.xlsx
+suggestions for improvement:
+- The provided text is a data dump, and it does not address the challenge of filtering data in Excel as requested by the prompt. The submission fails to show an understanding of how to use Excel's filtering capabilities.
+Correctness: 0%
+-----
