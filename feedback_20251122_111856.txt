@@ -1,0 +1,24 @@
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/43d9bf819579a140dc2ddd4fd7e33ec0058c26e1/week2/day5/miniproject_anagram/anagram_checker.py
+suggestions for improvement:
+- Consider adding error handling for file operations (e.g., handling FileNotFoundError).
+- While the current implementation is functional, for extremely large word lists, consider using a more efficient data structure or algorithm for anagram detection (e.g., creating a dictionary where keys are sorted word representations and values are lists of anagrams).
+Correctness: 100%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/43d9bf819579a140dc2ddd4fd7e33ec0058c26e1/week2/day5/miniproject_anagram/anagrams.py
+suggestions for improvement:
+- Consider adding a try-except block to handle potential file loading errors in AnagramChecker class.
+- The performance of the `get_anagrams` method in the `AnagramChecker` class could be improved by using a dictionary to store the sorted form of each word in the word list. This would avoid repeated sorting in the anagram check.
+- Enhance user experience by providing more specific error messages (e.g., differentiating between an empty input and an invalid character).
+- Add docstrings to the functions and classes for better documentation.
+Correctness: 100%
+-----
+URL: URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/43d9bf819579a140dc2ddd4fd7e33ec0058c26e1/week2/day5/miniproject_anagram/sowpods.txt
+suggestions for improvement:
+- This submission consists of a large text file, presumably intended to be a wordlist for the anagram checker. However, it doesn't constitute code or any structured response to the prompts asking for code implementation. Since the instructions explicitly require `.py` files, this does not fulfill the core requirements of the task.
+- This wordlist should ideally be used within the `AnagramChecker` class to validate words and find anagrams, as instructed. Without the surrounding code, its practical use in the project cannot be assessed.
+- This code snippet represents a text file (likely a word list), not code. Therefore, it cannot be assessed for traditional programming metrics like correctness, readability, performance, or security in the context of the given coding task.
+- There is no code to assess, and thus no improvements can be suggested.
+- The provided content is a text file containing a list of words, rather than code. Therefore, it cannot be evaluated for correctness concerning the anagram checker program described in the instructions.
+- It also cannot be assessed for readability, performance, or security because these metrics are relevant to executable code, not a static wordlist.
+Correctness: 0.0%
+-----

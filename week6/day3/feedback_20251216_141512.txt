@@ -1,0 +1,6 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/bb8dfea5b87afd452c47c3b8f0b0af7a178d4a1c/week6/day3/exercisesXP_w6d3.sql
+suggestions for improvement:
+- For better readability, consider adding comments to complex queries explaining the purpose of each join and filter.
+- In task 3 of exercise 1, the join condition `ON film.film_id = language.language_id` is incorrect. It should be `ON film.language_id = language.language_id`. While the rest of the query seems correct, double-checking these conditions is always good practice.
+Correctness: 100%
+-----
