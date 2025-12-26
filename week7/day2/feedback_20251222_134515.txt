@@ -1,0 +1,7 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/52990c34b8cd4b369994930c2a383906220142dd/week7/day2/ExercisesXP_w7d2_Moises.xlsx
+suggestions for improvement:
+- The submission includes a large amount of data that seems irrelevant to the exercises presented in the prompt. The initial section regarding beetle length is somewhat related to Exercise 1, but the extensive movie data and house search data are not connected to any of the provided instructions.
+- Focus on creating a clear, concise response that directly addresses the specific tasks outlined in the exercises.
+- The first part of the response attempts to provide sample data and results related to the IF exercise (beetle length), but it's presented in a messy, unstructured format. Use tables for better organization.
+Correctness: 20%
+-----

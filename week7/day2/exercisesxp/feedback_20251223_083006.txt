@@ -1,0 +1,5 @@
+URL: https://github.com/moisesa28/dibootcamp_nov_moises/blob/7094df654584d4c7a8d0e758ea9792d6bf028527/week7/day2/exercisesxp/link_to_exercises.txt
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
