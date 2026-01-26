@@ -1,0 +1,26 @@
+<!-- Exercise 2 : JavaScript Page vs. HTML Page -->
+<!-- Using JavaScript in HTML -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>With JavaScript</title>
+<header>
+<h1>Exercise 2 in HTML with JavaScript 👋</h1>
+</header>
+<body>
+<p>This is a basic HTML document with JavaScript.</p>
+<p>Clicking the button will change this text.</p>
+<button id="btn">Click me</button>
+</body>
+<script>
+    const btn = document.getElementById("btn");
+    const message = document.createElement("p");
+    message.textContent = "This text will change when you click the button.";
+    document.body.appendChild(message);
+
+    btn.addEventListener("click", () => {
+      message.textContent = "Nice! You just used JavaScript to update the DOM ✅";
+    });
+</script>
+</html>
